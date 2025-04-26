@@ -246,4 +246,44 @@ p {
   text-align: center;
 }
 
+nav a {
+  color: #333;
+  text-decoration: none;
+  padding: 8px 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
 
+nav a:hover {
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+main {
+  padding: 20px;
+  line-height: 1.6;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+body {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+body.loaded {
+  opacity: 1;
+}
